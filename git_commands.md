@@ -8,4 +8,4 @@ Git 15 Most Used Commands
 7. git push [remote name] [branch name]
 8. git clone [repository url] [folder name]
 9. git pull [remote name] [branch name]
-
+10.git fetch [remote name] [branch name]
