@@ -34,7 +34,7 @@ def stocks_plot_function(**kwargs):
     ti = kwargs['ti']
     stocks_prices = ti.xcom_pull(task_ids='fetch_prices_task') # <-- xcom_pull is used to pull the stocks_prices list generated above
     stock_plots_data = pd.concat(stocks_prices, ignore_index = True)
-    stock_plots_data.to_csv('/Users/antonellobenedetto/Documents/Data_Sets/Medium/stocks_plots_data.csv', index = False)
+    stock_plots_data.to_csv('/Users/anbento/Documents/Data_Sets/Medium/stocks_plots_data.csv', index = False)
     
     print('DF Shape: ', stock_plots_data.shape)
     print(stock_plots_data.head(5))
@@ -135,7 +135,7 @@ def stocks_table_function(**kwargs):
     
     print('DF Shape: ', stocks_table_data.shape)
     print(stocks_table_data.head(5)) 
-    stocks_table_data.to_csv('/Users/antonellobenedetto/Documents/Data_Sets/Medium/stocks_table_data.csv', index = False)
+    stocks_table_data.to_csv('/Users/anbento/Documents/Data_Sets/Medium/stocks_table_data.csv', index = False)
     print('Completed')
     
                                                          
